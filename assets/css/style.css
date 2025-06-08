@@ -5,6 +5,12 @@
 * License: https://bootstrapmade.com/license/
 */
 
+/* Global scroll-padding for anchor scrolling */
+html {
+  scroll-padding-top: 100px; /* Adjust this value based on your fixed header height */
+}
+
+
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
