@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-82R13REM48"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -13,34 +13,127 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Aishwarya D</title>
-  <meta name="description" content="Portfolio of Aishwarya D — Data Engineering & Analytics">
-  <meta name="keywords" content="Data Engineer, Data Analyst, SQL, Python, AWS, Azure, Tableau, Power BI, ETL">
+  <title>Aishwarya D — Data Engineering & Analytics</title>
+  <meta name="description" content="Portfolio of Aishwarya D — Data Engineering & Analytics. SQL, Python, AWS, Azure, Tableau, Power BI.">
+  <meta name="keywords" content="Data Engineer, Data Analyst, SQL, Python, AWS, Azure, Tableau, Power BI, ETL, Airflow, Spark">
 
   <!-- Favicons -->
   <link rel="icon" href="assets/img/user-icon.png">
   <link rel="apple-touch-icon" href="assets/img/user-icon.png">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Raleway:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
 
-  <!-- Vendor CSS Files -->
+  <!-- Vendor CSS -->
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <!-- Keep only one Font Awesome include (latest) -->
+  <!-- One Font Awesome include (latest) -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
 
-  <!-- Template Main CSS File -->
+  <!-- Template Main CSS -->
   <link href="assets/css/style.css" rel="stylesheet">
 
+  <!-- Custom polish -->
+  <style>
+    :root{
+      --bg: #0b0f14;
+      --panel: #11161d;
+      --muted: #9fb0c3;
+      --text: #e7eef6;
+      --brand: #5aa9ff;
+      --brand-2: #7ed957;
+      --line: #1b2430;
+      --card: #0f141a;
+    }
+    html,body{ background: var(--bg); color: var(--text); font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
+    a{ color: var(--brand); text-decoration: none; }
+    a:hover{ color: #93c7ff; }
+    .text-muted{ color: var(--muted) !important; }
+    .section-title h2{
+      font-family: "DM Sans", Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial;
+      font-weight: 700;
+      letter-spacing: .5px;
+      margin-bottom: .75rem;
+    }
+    .section-title p{ color: var(--muted); }
+    .section-bg{ background: #0d1218; }
+    .profile{
+      background: linear-gradient(180deg, rgba(17,22,29,.9), rgba(17,22,29,.6));
+      padding: 2rem 1.25rem 1.5rem;
+      border-bottom: 1px solid var(--line);
+    }
+    .profile img{ width: 120px; height:120px; object-fit: cover; border: 2px solid var(--line); }
+    #header{ background: var(--panel); }
+    #header .nav-menu a{ color: var(--muted); }
+    #header .nav-menu a:hover, #header .nav-menu a.active{ color: var(--text); }
+    .button{
+      background: var(--brand);
+      color: #051423;
+      border: none;
+      padding: .7rem 1.1rem;
+      font-weight: 600;
+      border-radius: .75rem;
+      box-shadow: 0 8px 20px rgba(90,169,255,.25);
+    }
+    .button:hover{ filter: brightness(1.05); }
+    .resume-item{
+      padding: 1.2rem 1.2rem 0.5rem;
+      margin-bottom: 1.25rem;
+      border: 1px solid var(--line);
+      border-radius: 1rem;
+      background: var(--card);
+    }
+    .resume-item h4, .resume-item h5{ margin-bottom: .4rem; }
+    .resume-item ul{ margin-bottom: .6rem; }
+    .pill-date{
+      background: #0c1723;
+      color: var(--muted);
+      padding: .2rem .55rem;
+      border-radius: .6rem;
+      font-size: .85rem;
+      border: 1px solid var(--line);
+    }
+    /* Projects */
+    .proj-card{
+      border: 1px solid var(--line);
+      background: var(--card);
+      border-radius: 1rem;
+      overflow: hidden;
+      margin-bottom: 1.25rem;
+    }
+    .proj-card h5{ margin-bottom: .35rem; }
+    .proj-img{
+      border-left: 1px solid var(--line);
+      background: #0b1117;
+    }
+    .proj-tech{ color: var(--muted); font-size: .95rem; }
+    .bi-github{ color: var(--text); }
+    /* Skills lists */
+    #skills h4{ font-weight: 700; }
+    #skills ul{ margin-bottom: 0; }
+    /* Contact icons */
+    .contact a i{ transition: transform .2s ease; }
+    .contact a:hover i{ transform: translateY(-2px); }
+    /* Back to top */
+    .back-to-top{ background: var(--brand); color: #061526; }
+    .back-to-top:hover{ filter: brightness(1.05); }
+    /* Make default template headings lighter spacing */
+    h1,h2,h3,h4{ letter-spacing:.2px; }
+    p{ line-height: 1.6; }
+    /* Improve anchor hitbox in sidebar */
+    #header .nav-menu a{ padding:.6rem .75rem; border-radius:.5rem; }
+    #header .nav-menu a:hover{ background: #0f1722; }
+    /* Ensure imgs responsive */
+    img{ height:auto; }
+  </style>
+
   <!--
-    Template Name: iPortfolio
-    Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-    Author: BootstrapMade.com
+    Template: iPortfolio by BootstrapMade
+    URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
     License: https://bootstrapmade.com/license/
   -->
 </head>
@@ -51,10 +144,13 @@
   <!-- ======= Header ======= -->
   <header id="header">
     <div class="d-flex flex-column">
+
       <div class="profile text-center">
         <img src="assets/img/user-image.png" alt="Portrait of Aishwarya" class="img-fluid rounded-circle">
-        <h1 class="text-light mt-3 mb-1"><a href="index.html" class="text-decoration-none">Aishwarya Dhormare</a></h1>
-        <h5 class="text-light mb-3">Data Engineer</h5>
+        <h1 class="text-light mt-3 mb-1">
+          <a href="index.html" class="text-decoration-none">Aishwarya Dhormare</a>
+        </h1>
+        <h5 class="text-light mb-2">Data Engineer</h5>
         <div class="social-links mt-2">
           <a href="https://www.linkedin.com/in/aishwaryad6/" class="linkedin" target="_blank" rel="noopener" aria-label="LinkedIn">
             <i class="bx bxl-linkedin"></i>
@@ -75,29 +171,31 @@
           <li><a href="https://drive.google.com/file/d/1664zUrmpZfcqUYiJ_zcW4Ii4-Vf3tdGr/view?usp=drive_link" class="nav-link" target="_blank" rel="noopener"><i class="bx bx-file" aria-hidden="true"></i><span>Resume</span></a></li>
           <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope" aria-hidden="true"></i> <span>Contact</span></a></li>
         </ul>
-      </nav><!-- .nav-menu -->
+      </nav>
     </div>
-  </header><!-- End Header -->
+  </header>
+  <!-- End Header -->
 
   <main id="main">
     <!-- ======= About Section ======= -->
-    <section id="about" class="about">
+    <section id="about" class="about py-5">
       <div class="container">
-        <div class="row" data-aos="fade-in">
-          <div class="section-title">
-            <h2>About</h2>
-            <p>
-              I am a data professional with 4.5+ years of experience, currently pursuing an MS in Computer Science at Texas A&amp;M University–Kingsville. Skilled in SQL, Python, cloud platforms (AWS, Azure), and BI tools (Tableau, Power BI), I specialize in building data pipelines, preparing clean datasets, and developing dashboards that transform raw data into actionable insights.
-            </p>
-            <p>
-              Passionate about using data to improve efficiency and decision-making, I bring a mix of engineering and analytics expertise. My experience spans telecom and healthcare domains, working on ETL pipelines, streaming data, and business intelligence solutions that deliver measurable impact.
-            </p>
-          </div>
-
-          <div class="col-12 text-center">
-            <a href="#experience" class="nav-link scrollto">
-              <button class="button" type="button">Read more <i class="bx bx-caret-down" aria-hidden="true"></i></button>
-            </a>
+        <div class="row justify-content-center" data-aos="fade-in">
+          <div class="col-lg-10">
+            <div class="section-title">
+              <h2>About</h2>
+              <p>
+                I am a data professional with 4.5+ years of experience, currently pursuing an MS in Computer Science at Texas A&amp;M University–Kingsville. Skilled in SQL, Python, cloud platforms (AWS, Azure), and BI tools (Tableau, Power BI), I specialize in building data pipelines, preparing clean datasets, and developing dashboards that transform raw data into actionable insights.
+              </p>
+              <p>
+                Passionate about using data to improve efficiency and decision-making, I bring a mix of engineering and analytics expertise. My experience spans telecom and healthcare domains, working on ETL pipelines, streaming data, and business intelligence solutions that deliver measurable impact.
+              </p>
+            </div>
+            <div class="text-center">
+              <a href="#experience" class="nav-link scrollto d-inline-block">
+                <button class="button" type="button">Read more <i class="bx bx-caret-down" aria-hidden="true"></i></button>
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -105,18 +203,24 @@
     <!-- End About Section -->
 
     <!-- ======= Experience Section ======= -->
-    <section id="experience" class="experience section-bg">
+    <section id="experience" class="experience section-bg py-5">
       <div class="container">
-        <div class="row" data-aos="fade-up" data-aos-delay="100">
-          <div class="section-title">
-            <h2>Work Experience</h2>
+        <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="50">
+          <div class="col-lg-10">
+            <div class="section-title">
+              <h2>Work Experience</h2>
+              <p class="mb-4">Selected roles highlighting engineering and analytics impact.</p>
+            </div>
 
             <!-- TruBridge -->
-            <div class="resume-item" data-aos="fade-up">
-              <h4><b>TruBridge Inc.</b><span style="float:right;">Remote | Austin, Texas</span></h4>
-              <h5 class="text-muted">
+            <div class="resume-item">
+              <h4 class="d-flex justify-content-between align-items-center flex-wrap">
+                <b>TruBridge Inc.</b>
+                <span class="pill-date">Remote · Austin, Texas</span>
+              </h4>
+              <h5 class="text-muted d-flex justify-content-between align-items-center flex-wrap">
                 <em>Data Analytics Intern</em>
-                <small class="text-muted"><span style="float:right;">Jul 2025 – Sep 2025</span></small>
+                <small class="pill-date">Jul 2025 – Sep 2025</small>
               </h5>
               <ul>
                 <li>Cleaned, validated, and prepared healthcare datasets using SQL and Python to support reporting.</li>
@@ -126,11 +230,14 @@
             </div>
 
             <!-- Texas A&M -->
-            <div class="resume-item" data-aos="fade-up">
-              <h4><b>Texas A&amp;M University</b><span style="float:right;">Kingsville, Texas</span></h4>
-              <h5 class="text-muted">
+            <div class="resume-item">
+              <h4 class="d-flex justify-content-between align-items-center flex-wrap">
+                <b>Texas A&amp;M University</b>
+                <span class="pill-date">Kingsville, Texas</span>
+              </h4>
+              <h5 class="text-muted d-flex justify-content-between align-items-center flex-wrap">
                 <em>Graduate Assistant</em>
-                <small class="text-muted"><span style="float:right;">Jan 2025 – May 2025</span></small>
+                <small class="pill-date">Jan 2025 – May 2025</small>
               </h5>
               <ul>
                 <li>Assisted in teaching Real-Time Systems, helping students connect theory to data-driven applications.</li>
@@ -139,11 +246,14 @@
             </div>
 
             <!-- NCS (Singtel) -->
-            <div class="resume-item" data-aos="fade-up">
-              <h4><b>NCS Group</b><span style="float:right;">Pune, India</span></h4>
-              <h5 class="text-muted">
+            <div class="resume-item">
+              <h4 class="d-flex justify-content-between align-items-center flex-wrap">
+                <b>NCS Group</b>
+                <span class="pill-date">Pune, India</span>
+              </h4>
+              <h5 class="text-muted d-flex justify-content-between align-items-center flex-wrap">
                 <em>Data Analytics Engineer II (Client: Singtel)</em>
-                <small class="text-muted"><span style="float:right;">Jun 2021 – Nov 2023</span></small>
+                <small class="pill-date">Jun 2021 – Nov 2023</small>
               </h5>
               <ul>
                 <li>Built and optimized ETL pipelines for high-volume telecom data (JSON, Parquet, AVRO), reducing reconciliation time by 20%.</li>
@@ -155,10 +265,10 @@
             </div>
 
             <!-- NCS (Optus) -->
-            <div class="resume-item" data-aos="fade-up">
-              <h5 class="text-muted">
+            <div class="resume-item">
+              <h5 class="text-muted d-flex justify-content-between align-items-center flex-wrap">
                 <em>Data Analytics Engineer I (Client: Optus)</em>
-                <small class="text-muted"><span style="float:right;">Jun 2019 – May 2021</span></small>
+                <small class="pill-date">Jun 2019 – May 2021</small>
               </h5>
               <ul>
                 <li>Developed and maintained data pipelines for telecom operational data, ensuring accurate and timely availability.</li>
@@ -170,10 +280,11 @@
             </div>
 
             <!-- Award -->
-            <div class="resume-item" data-aos="fade-up">
-              <h5 class="text-muted"><em>Awards</em></h5>
-              <p>Received the <b>Singtel SPOT Award – Best Team</b> for outstanding teamwork and impactful data analytics contributions.</p>
+            <div class="resume-item">
+              <h5 class="text-muted mb-2"><em>Awards</em></h5>
+              <p class="mb-0">Received the <b>Singtel SPOT Award – Best Team</b> for outstanding teamwork and impactful data analytics contributions.</p>
             </div>
+
           </div>
         </div>
       </div>
@@ -181,30 +292,39 @@
     <!-- End Experience Section -->
 
     <!-- ======= Education Section ======= -->
-    <section id="education" class="education">
+    <section id="education" class="education py-5">
       <div class="container">
-        <div class="row" data-aos="fade-up" data-aos-delay="100">
-          <div class="section-title">
-            <h2>Education</h2>
+        <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="50">
+          <div class="col-lg-10">
+            <div class="section-title">
+              <h2>Education</h2>
+            </div>
 
-            <div class="mb-4" data-aos="fade-up">
-              <h4><b>Texas A&amp;M University</b><span style="float:right;">Kingsville, Texas</span></h4>
-              <h5 class="text-muted">
+            <div class="mb-4">
+              <h4 class="d-flex justify-content-between align-items-center flex-wrap">
+                <b>Texas A&amp;M University</b>
+                <span class="pill-date">Kingsville, Texas</span>
+              </h4>
+              <h5 class="text-muted d-flex justify-content-between align-items-center flex-wrap">
                 <em>Master of Science in Computer Science (GPA: 4.0/4.0)</em>
-                <small class="text-muted"><span style="float:right;">Aug 2024 – May 2026 (Expected)</span></small>
+                <small class="pill-date">Aug 2024 – May 2026 (Expected)</small>
               </h5>
-              <p class="description mb-1"><b>Academic Experience:</b> Graduate Assistant for “Real-Time Systems”</p>
-              <p class="description"><b>Relevant Coursework:</b> Data Science, Data Mining, Cloud Computing, AI, Database Systems</p>
+              <p class="mb-1"><b>Academic Experience:</b> Graduate Assistant for “Real-Time Systems”.</p>
+              <p class="mb-0"><b>Relevant Coursework:</b> Data Science, Data Mining, Cloud Computing, AI, Database Systems.</p>
             </div>
 
-            <div data-aos="fade-up">
-              <h4><b>Savitribai Phule Pune University</b><span style="float:right;">Pune, India</span></h4>
-              <h5 class="text-muted">
+            <div>
+              <h4 class="d-flex justify-content-between align-items-center flex-wrap">
+                <b>Savitribai Phule Pune University</b>
+                <span class="pill-date">Pune, India</span>
+              </h4>
+              <h5 class="text-muted d-flex justify-content-between align-items-center flex-wrap">
                 <em>Bachelor of Engineering in Information Technology</em>
-                <small class="text-muted"><span style="float:right;">Aug 2016 – May 2019</span></small>
+                <small class="pill-date">Aug 2016 – May 2019</small>
               </h5>
-              <p class="description"><b>Activities:</b> Class Coordinator, Presentations, Debate, Anchoring, Badminton, Volleyball</p>
+              <p class="mb-0"><b>Activities:</b> Class Coordinator, Presentations, Debate, Anchoring, Badminton, Volleyball.</p>
             </div>
+
           </div>
         </div>
       </div>
@@ -212,249 +332,194 @@
     <!-- End Education Section -->
 
     <!-- ======= Projects Section ======= -->
-    <section id="projects" class="projects section-bg">
+    <section id="projects" class="projects section-bg py-5">
       <div class="container">
-        <div class="section-title">
-          <h2>Projects</h2>
-          <p>Explore selected data engineering and analytics projects.</p>
-        </div>
-
-        <div class="col-lg-12 d-flex align-items-stretch">
-          <div class="info w-100">
+        <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="50">
+          <div class="col-lg-10">
+            <div class="section-title">
+              <h2>Projects</h2>
+              <p>Selected data engineering and analytics work.</p>
+            </div>
 
             <!-- Project 1 -->
-            <div class="row align-items-center mb-4">
-              <div class="col-md-6" style="text-align: justify; padding: 30px;">
-                <h5 class="mb-2">
-                  <b>Food Delivery App Data Analysis</b>
-                  <a href="https://github.com/aishwaryad6/db-migration-azure-data" target="_blank" rel="noopener" aria-label="View code on GitHub">
-                    <span class="bi bi-github" style="float:right">&nbsp;Code</span>
-                  </a>
-                </h5>
-                <p class="mb-1"><b>Tech Stack:</b> SQL, Python, Pandas, Tableau</p>
-                <p>
-                  Performed end-to-end analysis to uncover trends in customer behavior and operational efficiency. Cleaned and transformed data with Python/Pandas, wrote complex SQL for insights (order frequency, delivery times), and built interactive Tableau dashboards for decision support.
-                </p>
-              </div>
-              <div class="col-md-6 text-center">
-                <img src="assets/img/azure-dbmp-architecture-diagram.png" alt="Architecture diagram for analytics workflow" class="img-fluid" style="border:1px solid #000; max-width:80%; height:auto;">
+            <div class="proj-card">
+              <div class="row g-0 align-items-stretch">
+                <div class="col-md-6 p-4">
+                  <h5 class="mb-1">
+                    <b>Food Delivery App Data Analysis</b>
+                    <a href="https://github.com/aishwaryad6/db-migration-azure-data" target="_blank" rel="noopener" aria-label="View code on GitHub" class="float-end">
+                      <i class="bi bi-github"></i> Code
+                    </a>
+                  </h5>
+                  <p class="proj-tech mb-2"><b>Tech Stack:</b> SQL, Python, Pandas, Tableau</p>
+                  <p class="mb-0">End-to-end analysis to uncover trends in customer behavior and operational efficiency. Cleaned and transformed data (Python/Pandas), wrote SQL for KPIs, and built Tableau dashboards for decision support.</p>
+                </div>
+                <div class="col-md-6 proj-img p-3 text-center">
+                  <img src="assets/img/azure-dbmp-architecture-diagram.png" alt="Architecture diagram for analytics workflow" class="img-fluid rounded-3" style="border:1px solid var(--line);">
+                </div>
               </div>
             </div>
 
             <!-- Project 2 -->
-            <div class="row align-items-center mb-4">
-              <div class="col-md-6" style="text-align: justify; padding: 30px;">
-                <h5 class="mb-2">
-                  <b>COVID-19 India Data Analysis</b>
-                  <a href="https://github.com/aishwaryad6/db-migration-azure-data" target="_blank" rel="noopener" aria-label="View code on GitHub">
-                    <span class="bi bi-github" style="float:right">&nbsp;Code</span>
-                  </a>
-                </h5>
-                <p class="mb-1"><b>Tech Stack:</b> Python, Pandas, SQL, Jupyter Notebook</p>
-                <p>
-                  Conducted analysis of case distribution, recoveries, and testing across states and demographics. Cleaned and preprocessed datasets with Pandas, performed SQL for insights, and presented findings via notebooks for informed decision-making.
-                </p>
-              </div>
-              <div class="col-md-6 text-center">
-                <img src="assets/img/azure-dbmp-architecture-diagram.png" alt="EDA notebook visualization placeholder" class="img-fluid" style="border:1px solid #000; max-width:80%; height:auto;">
+            <div class="proj-card">
+              <div class="row g-0 align-items-stretch">
+                <div class="col-md-6 p-4">
+                  <h5 class="mb-1">
+                    <b>COVID-19 India Data Analysis</b>
+                    <a href="https://github.com/aishwaryad6/db-migration-azure-data" target="_blank" rel="noopener" aria-label="View code on GitHub" class="float-end">
+                      <i class="bi bi-github"></i> Code
+                    </a>
+                  </h5>
+                  <p class="proj-tech mb-2"><b>Tech Stack:</b> Python, Pandas, SQL, Jupyter Notebook</p>
+                  <p class="mb-0">Cleaned and analyzed datasets to study case distribution, recoveries, and testing across states/demographics. Presented insights with notebooks to support informed decision-making.</p>
+                </div>
+                <div class="col-md-6 proj-img p-3 text-center">
+                  <img src="assets/img/azure-dbmp-architecture-diagram.png" alt="EDA notebook visualization" class="img-fluid rounded-3" style="border:1px solid var(--line);">
+                </div>
               </div>
             </div>
 
             <!-- Project 3 -->
-            <div class="row align-items-center mb-4">
-              <div class="col-md-6" style="text-align: justify; padding: 30px;">
-                <h5 class="mb-2">
-                  <b>SpotifySync ETL Pipeline</b>
-                  <a href="https://github.com/aishwaryad6/db-migration-azure-data" target="_blank" rel="noopener" aria-label="View code on GitHub">
-                    <span class="bi bi-github" style="float:right">&nbsp;Code</span>
-                  </a>
-                </h5>
-                <p class="mb-1"><b>Tech Stack:</b> Python, Airflow, Docker, PostgreSQL, Tableau</p>
-                <p>
-                  Designed and implemented an automated ETL pipeline to extract and load Spotify’s Global Top 50 into PostgreSQL. Orchestrated with Airflow and Docker; created Tableau dashboards for streaming trends.
-                </p>
-              </div>
-              <div class="col-md-6 text-center">
-                <img src="assets/img/azure-dbmp-architecture-diagram.png" alt="Airflow-based ETL pipeline diagram placeholder" class="img-fluid" style="border:1px solid #000; max-width:80%; height:auto;">
+            <div class="proj-card">
+              <div class="row g-0 align-items-stretch">
+                <div class="col-md-6 p-4">
+                  <h5 class="mb-1">
+                    <b>SpotifySync ETL Pipeline</b>
+                    <a href="https://github.com/aishwaryad6/db-migration-azure-data" target="_blank" rel="noopener" aria-label="View code on GitHub" class="float-end">
+                      <i class="bi bi-github"></i> Code
+                    </a>
+                  </h5>
+                  <p class="proj-tech mb-2"><b>Tech Stack:</b> Python, Airflow, Docker, PostgreSQL, Tableau</p>
+                  <p class="mb-0">Automated ETL to ingest Spotify Global Top 50 into PostgreSQL. Orchestrated with Airflow/Docker and visualized streaming trends in Tableau.</p>
+                </div>
+                <div class="col-md-6 proj-img p-3 text-center">
+                  <img src="assets/img/azure-dbmp-architecture-diagram.png" alt="Airflow-based ETL pipeline diagram" class="img-fluid rounded-3" style="border:1px solid var(--line);">
+                </div>
               </div>
             </div>
 
             <!-- Project 4 -->
-            <div class="row align-items-center mb-4">
-              <div class="col-md-6" style="text-align: justify; padding: 30px;">
-                <h5 class="mb-2">
-                  <b>AWS ETL Pipeline on YouTube Data</b>
-                  <a href="https://github.com/aishwaryad6/aws-etl-youtube-data" target="_blank" rel="noopener" aria-label="View code on GitHub">
-                    <span class="bi bi-github" style="float:right">&nbsp;Code</span>
-                  </a>
-                </h5>
-                <p class="mb-1"><b>Tech Stack:</b> AWS, Python, Spark</p>
-                <p>
-                  Designed an end-to-end data architecture using AWS services. Built a pipeline using S3 (storage), Lambda, Spark, and Athena to transform/analyze YouTube trending data (&gt;1M rows). Orchestrated in Glue Studio; built QuickSight dashboards for key metrics.
-                </p>
-              </div>
-              <div class="col-md-6 text-center">
-                <img src="assets/img/AWS_ETL_pipeline_Data_Architecture_Diagram.png" alt="AWS ETL pipeline architecture diagram" class="img-fluid" style="max-width:100%; height:auto;">
+            <div class="proj-card">
+              <div class="row g-0 align-items-stretch">
+                <div class="col-md-6 p-4">
+                  <h5 class="mb-1">
+                    <b>AWS ETL Pipeline on YouTube Data</b>
+                    <a href="https://github.com/aishwaryad6/aws-etl-youtube-data" target="_blank" rel="noopener" aria-label="View code on GitHub" class="float-end">
+                      <i class="bi bi-github"></i> Code
+                    </a>
+                  </h5>
+                  <p class="proj-tech mb-2"><b>Tech Stack:</b> AWS, Python, Spark</p>
+                  <p class="mb-0">End-to-end pipeline using S3, Lambda, Spark, and Athena to process &gt;1M rows of YouTube trending data. Orchestrated in Glue Studio and visualized KPIs in QuickSight.</p>
+                </div>
+                <div class="col-md-6 proj-img p-3 text-center">
+                  <img src="assets/img/AWS_ETL_pipeline_Data_Architecture_Diagram.png" alt="AWS ETL pipeline architecture diagram" class="img-fluid rounded-3" style="border:1px solid var(--line);">
+                </div>
               </div>
             </div>
 
-          </div>
+          </div><!-- /col -->
         </div>
       </div>
     </section>
     <!-- End Projects Section -->
 
     <!-- ======= Skills Section ======= -->
-    <section id="skills" class="skills section-bg">
+    <section id="skills" class="skills py-5">
       <div class="container">
-        <div data-aos="fade-up">
-          <div class="section-title">
-            <h2>Skills</h2>
-            <p>Here is a snapshot of data engineering and analytics skills.</p>
-          </div>
-
-          <div class="row" data-aos="fade-up" data-aos-delay="100">
-            <div class="col-lg-12 d-flex align-items-stretch">
-              <div class="info w-100">
-
-                <div class="row">
-                  <div class="col-lg-4 col-md-6 mb-4">
-                    <div>
-                      <h4>Programming &amp; Scripting</h4>
-                      <ul class="mb-0">
-                        <li>Python</li>
-                        <li>SQL</li>
-                        <li>Java</li>
-                        <li>C++</li>
-                        <li>Shell Scripting</li>
-                      </ul>
-                    </div>
-                  </div>
-
-                  <div class="col-lg-4 col-md-6 mb-4">
-                    <div>
-                      <h4>Data Engineering &amp; Analytics</h4>
-                      <ul class="mb-0">
-                        <li>ETL Pipelines, Data Modeling, Data Cleaning, Statistical Analysis, dbt</li>
-                        <li>Workflow Orchestration: Apache Airflow, AWS Glue</li>
-                        <li>Big Data &amp; Streaming: Spark, PySpark, Kafka</li>
-                      </ul>
-                    </div>
-                  </div>
-
-                  <div class="col-lg-4 col-md-6 mb-4">
-                    <div>
-                      <h4>Visualization &amp; BI Tools</h4>
-                      <ul class="mb-0">
-                        <li>Tableau</li>
-                        <li>Power BI</li>
-                        <li>Excel (Advanced)</li>
-                        <li>QuickSight</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="row mt-3">
-                  <div class="col-lg-6 col-md-6 mb-4">
-                    <div>
-                      <h4>Python Packages</h4>
-                      <ul class="mb-0">
-                        <li>Pandas</li>
-                        <li>NumPy</li>
-                        <li>Matplotlib</li>
-                        <li>Scikit-learn</li>
-                        <li>Seaborn</li>
-                      </ul>
-                    </div>
-                  </div>
-
-                  <div class="col-lg-6 col-md-6 mb-4">
-                    <div>
-                      <h4>Databases</h4>
-                      <ul class="mb-0">
-                        <li>PostgreSQL</li>
-                        <li>MS SQL</li>
-                        <li>MySQL</li>
-                        <li>Oracle</li>
-                        <li>Snowflake</li>
-                        <li>MongoDB</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="row mt-3">
-                  <div class="col-lg-6 col-md-6 mb-4">
-                    <div>
-                      <h4>Cloud &amp; Containers</h4>
-                      <ul class="mb-0">
-                        <li>AWS: S3, EC2, Glue, Athena, Lambda, EMR, IAM</li>
-                        <li>Azure: Data Factory, Data Lake, Databricks</li>
-                        <li>Docker</li>
-                      </ul>
-                    </div>
-                  </div>
-
-                  <div class="col-lg-6 col-md-6 mb-4">
-                    <div>
-                      <h4>Other Tools</h4>
-                      <ul class="mb-0">
-                        <li>Git</li>
-                        <li>Jenkins</li>
-                        <li>Jira</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-
-              </div><!-- .info -->
+        <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="50">
+          <div class="col-lg-10">
+            <div class="section-title">
+              <h2>Skills</h2>
+              <p>Snapshot of data engineering and analytics tools.</p>
             </div>
-          </div>
+
+            <div class="row g-4">
+              <div class="col-lg-4 col-md-6">
+                <h4>Programming &amp; Scripting</h4>
+                <ul>
+                  <li>Python, SQL, Java, C++, Shell</li>
+                </ul>
+                <h4 class="mt-3">Python Libraries</h4>
+                <ul>
+                  <li>Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn</li>
+                </ul>
+              </div>
+
+              <div class="col-lg-4 col-md-6">
+                <h4>Data Engineering &amp; Analytics</h4>
+                <ul>
+                  <li>ETL/ELT, Data Modeling, Data Cleaning, Statistical Analysis, dbt</li>
+                  <li>Orchestration: Apache Airflow, AWS Glue</li>
+                  <li>Big Data &amp; Streaming: Spark, PySpark, Kafka</li>
+                </ul>
+                <h4 class="mt-3">Visualization &amp; BI</h4>
+                <ul>
+                  <li>Tableau, Power BI, QuickSight, Excel (Advanced)</li>
+                </ul>
+              </div>
+
+              <div class="col-lg-4 col-md-6">
+                <h4>Databases</h4>
+                <ul>
+                  <li>PostgreSQL, MS SQL, MySQL, Oracle, Snowflake, MongoDB</li>
+                </ul>
+                <h4 class="mt-3">Cloud &amp; Tools</h4>
+                <ul>
+                  <li>AWS: S3, EC2, Glue, Athena, Lambda, EMR, IAM</li>
+                  <li>Azure: Data Factory, Data Lake, Databricks</li>
+                  <li>Docker, Git, Jenkins, Jira</li>
+                </ul>
+              </div>
+            </div>
+
+          </div><!-- /col -->
         </div>
       </div>
     </section>
     <!-- End Skills Section -->
 
     <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
+    <section id="contact" class="contact section-bg py-5">
       <div class="container">
-        <div data-aos="fade-up">
-          <div class="section-title">
-            <h2>Contact</h2>
-            <p>Feel free to reach out.</p>
+        <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="50">
+          <div class="col-lg-10">
+            <div class="section-title">
+              <h2>Contact</h2>
+              <p>Feel free to reach out.</p>
+            </div>
+
+            <p class="description" style="font-size: 18px;">
+              <b>Email:</b>
+              <a href="mailto:aishwaryad.office@gmail.com" target="_blank" rel="noopener">
+                aishwaryad.office@gmail.com
+                <i class="bi bi-envelope" style="color:#7ed957; font-size:18px;" aria-hidden="true"></i>
+              </a>
+            </p>
+
+            <p class="description" style="font-size: 18px;">
+              <b>Follow:</b>
+              <a href="https://www.linkedin.com/in/aishwaryad6/" class="linkedin" target="_blank" rel="noopener" aria-label="LinkedIn">
+                <i class="fab fa-linkedin" style="color:#5aa9ff; font-size:20px;"></i>
+              </a>
+              &nbsp;&nbsp;
+              <a href="https://github.com/aishwaryad6" class="git-hub" target="_blank" rel="noopener" aria-label="GitHub">
+                <i class="fab fa-github" style="color:#e7eef6; font-size:20px;"></i>
+              </a>
+            </p>
+
           </div>
-
-          <p class="description" style="font-size: 18px;">
-            <b>Email:</b>
-            <a href="mailto:aishwaryad.office@gmail.com" target="_blank" rel="noopener">
-              aishwaryad.office@gmail.com
-              <i class="bi bi-envelope" style="color:#0077b5; font-size:18px;" aria-hidden="true"></i>
-            </a>
-          </p>
-
-          <p class="description" style="font-size: 18px;">
-            <b>Follow:</b>
-            <a href="https://www.linkedin.com/in/aishwaryad6/" class="linkedin" target="_blank" rel="noopener" aria-label="LinkedIn">
-              <i class="fab fa-linkedin" style="color:#2867b2; font-size:20px;"></i>
-            </a>
-            &nbsp;&nbsp;&nbsp;
-            <a href="https://github.com/aishwaryad6" class="git-hub" target="_blank" rel="noopener" aria-label="GitHub">
-              <i class="fab fa-github" style="color:#211F1F; font-size:20px;"></i>
-            </a>
-          </p>
         </div>
       </div>
     </section>
     <!-- End Contact Section -->
-  </main><!-- End #main -->
+  </main>
 
   <!-- Back to top -->
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center" aria-label="Back to top">
     <i class="bi bi-arrow-up-short"></i>
   </a>
 
-  <!-- Vendor JS Files -->
+  <!-- Vendor JS -->
   <script src="assets/vendor/purecounter/purecounter.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -465,7 +530,7 @@
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
 
-  <!-- Template Main JS File -->
+  <!-- Main JS -->
   <script src="assets/js/main.js"></script>
 </body>
 </html>
