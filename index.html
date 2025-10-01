@@ -15,7 +15,7 @@
 
   <title>Aishwarya D — Data Engineering & Analytics</title>
   <meta name="description" content="Portfolio of Aishwarya D — Data Engineering & Analytics. SQL, Python, AWS, Azure, Tableau, Power BI.">
-  <meta name="keywords" content="Data Engineer, Data Analyst, Analytics Engineer, ETL, Airflow, Spark, SQL, Python, AWS, Azure, Tableau, Power BI">
+  <meta name="keywords" content="Data Engineer, Data Analyst, ETL, Airflow, Spark, SQL, Python, AWS, Azure, Tableau, Power BI">
 
   <!-- Favicons -->
   <link rel="icon" href="assets/img/user-icon.png">
@@ -37,103 +37,103 @@
   <!-- Template Main CSS -->
   <link href="assets/css/style.css" rel="stylesheet">
 
-  <!-- Professional light theme polish -->
+  <!-- Custom Dark Theme (original color vibe) + Pro spacing/typography -->
   <style>
     :root{
-      --bg: #ffffff;
-      --text: #0f172a;         /* slate-900 */
-      --muted: #5b6b82;        /* slate-500 */
-      --line: #e6eaf0;         /* light border */
-      --panel: #f7f9fc;        /* section bg */
-      --card: #ffffff;         /* cards */
-      --brand: #0b5ed7;        /* primary */
-      --brand-2: #00b894;      /* accent green */
-      --link: #0b5ed7;
-      --link-hover: #0a53be;
+      --bg: #0b0f14;        /* page background */
+      --panel: #11161d;     /* sidebar/header */
+      --text: #e7eef6;      /* main text */
+      --muted: #9fb0c3;     /* secondary text */
+      --line: #1b2430;      /* borders */
+      --card: #0f141a;      /* cards / items */
+      --brand: #5aa9ff;     /* blue accent */
+      --brand-2: #7ed957;   /* green accent */
     }
-    html,body{ background: var(--bg); color: var(--text); font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial; }
-    a{ color: var(--link); text-decoration: none; }
-    a:hover{ color: var(--link-hover); }
+    html,body{ background: var(--bg); color: var(--text); font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial; }
+    a{ color: var(--brand); text-decoration: none; }
+    a:hover{ color: #93c7ff; }
 
-    /* Header / Sidebar */
-    #header{ background: #0f172a; } /* deep navy */
-    .profile{ padding: 2rem 1.25rem 1.5rem; border-bottom: 1px solid rgba(255,255,255,.08); }
-    .profile img{ width: 120px; height: 120px; object-fit: cover; border: 2px solid rgba(255,255,255,.15); }
-    .profile h1 a, .profile h5{ color: #f1f5f9; }
-    #header .nav-menu a{ color: #c7d2fe; opacity: .85; }
-    #header .nav-menu a:hover, #header .nav-menu a.active{ color: #fff; opacity: 1; background: rgba(255,255,255,.06); border-radius: .5rem; }
-    #header .nav-menu a{ padding:.6rem .8rem; display:flex; align-items:center; gap:.5rem; }
+    /* Sidebar / header */
+    #header{ background: var(--panel); }
+    .profile{
+      background: linear-gradient(180deg, rgba(17,22,29,.9), rgba(17,22,29,.6));
+      padding: 2rem 1.25rem 1.5rem;
+      border-bottom: 1px solid var(--line);
+      text-align: center;
+    }
+    .profile img{ width:120px; height:120px; object-fit:cover; border:2px solid var(--line); }
+    .profile h1 a, .profile h5{ color:#f1f5f9; }
+    #header .nav-menu a{ color:#c7d2fe; opacity:.85; padding:.6rem .8rem; display:flex; align-items:center; gap:.5rem; border-radius:.5rem; }
+    #header .nav-menu a:hover, #header .nav-menu a.active{ color:#fff; opacity:1; background: rgba(255,255,255,.06); }
 
-    /* Sections */
-    .section-bg{ background: var(--panel); }
+    /* Sections & headings */
+    .section-bg{ background:#0d1218; }
     .section-title h2{
-      font-family: "DM Sans", Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial;
-      font-weight: 700; letter-spacing: .3px; margin-bottom: .5rem;
+      font-family:"DM Sans", Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial;
+      font-weight:700; letter-spacing:.3px; margin-bottom:.5rem;
     }
-    .section-title p{ color: var(--muted); margin-bottom: 1.5rem; }
+    .section-title p{ color:var(--muted); margin-bottom:1.25rem; }
 
-    /* About spacing (short paragraphs) */
-    #about p{ margin-bottom: 0.85rem; line-height: 1.7; color: #1f2937; }
+    /* About text: short paragraphs, good leading */
+    #about p{ margin-bottom:.9rem; line-height:1.7; color:#cbd5e1; }
 
     /* Buttons */
     .button{
-      background: var(--brand); color: #fff; border: none;
-      padding: .65rem 1rem; font-weight: 600; border-radius: .6rem;
-      box-shadow: 0 8px 20px rgba(11,94,215,.15);
+      background: var(--brand); color:#051423; border:none; padding:.65rem 1rem;
+      font-weight:600; border-radius:.6rem; box-shadow:0 8px 20px rgba(90,169,255,.25);
     }
-    .button:hover{ filter: brightness(1.05); }
+    .button:hover{ filter:brightness(1.05); }
 
-    /* Experience cards with generous space */
+    /* Experience cards with generous spacing */
     .resume-item{
-      padding: 1.25rem 1.25rem .75rem;
-      border: 1px solid var(--line);
-      border-radius: 1rem;
+      padding:1.25rem 1.25rem .9rem;
+      border:1px solid var(--line);
+      border-radius:1rem;
       background: var(--card);
-      box-shadow: 0 6px 16px rgba(15,23,42,.06);
-      margin-bottom: 1.5rem;   /* more space between items */
+      box-shadow:0 6px 16px rgba(0,0,0,.25);
+      margin-bottom: 1.75rem; /* <- more space between roles */
     }
-    .resume-item h4{ margin-bottom: .35rem; }
-    .resume-item h5{ margin-bottom: .4rem; color: var(--muted); }
-    .resume-item ul{ margin-bottom: .2rem; }
+    .resume-item h4{ margin-bottom:.35rem; }
+    .resume-item h5{ margin-bottom:.45rem; color:var(--muted); }
+    .resume-item ul{ margin-bottom:.2rem; }
     .pill{
-      background: #eef2ff; color: #3b82f6; border: 1px solid #dbe4ff;
-      padding: .15rem .5rem; border-radius: .5rem; font-size: .85rem;
+      background:#0c1723; color:var(--muted); border:1px solid var(--line);
+      padding:.2rem .55rem; border-radius:.6rem; font-size:.85rem;
     }
 
     /* Project cards */
     .proj-card{
-      border: 1px solid var(--line);
+      border:1px solid var(--line);
       background: var(--card);
-      border-radius: 1rem;
-      overflow: hidden;
-      box-shadow: 0 6px 16px rgba(15,23,42,.06);
-      margin-bottom: 1.25rem;
+      border-radius:1rem;
+      overflow:hidden;
+      box-shadow:0 6px 16px rgba(0,0,0,.25);
+      margin-bottom:1.25rem;
     }
-    .proj-tech{ color: var(--muted); font-size: .95rem; }
-    .proj-img{ background: #f4f7fb; border-left: 1px solid var(--line); }
+    .proj-tech{ color:var(--muted); font-size:.95rem; }
+    .proj-img{ background:#0b1117; border-left:1px solid var(--line); }
+    .fa-github{ color: var(--text); }
 
-    /* Skills clean layout */
-    #skills h4{ font-weight: 700; margin-bottom: .4rem; }
-    #skills ul{ margin-bottom: .6rem; color:#334155; }
+    /* Skills */
+    #skills h4{ font-weight:700; margin-bottom:.4rem; }
+    #skills ul{ margin-bottom:.6rem; color:#b5c6d9; }
 
     /* Contact */
     .contact a i{ transition: transform .2s ease; }
     .contact a:hover i{ transform: translateY(-2px); }
 
     /* Back to top */
-    .back-to-top{ background: var(--brand); color: #fff; }
-    .back-to-top:hover{ filter: brightness(1.05); }
+    .back-to-top{ background: var(--brand); color:#061526; }
+    .back-to-top:hover{ filter:brightness(1.05); }
 
-    /* Utilities */
+    /* Fine typographic polish */
     h1,h2,h3,h4{ letter-spacing:.2px; }
     p{ letter-spacing:.2px; }
     img{ height:auto; }
   </style>
 
-  <!--
-    Template: iPortfolio by BootstrapMade
-    License: https://bootstrapmade.com/license/
-  -->
+  <!-- Template credit:
+       iPortfolio by BootstrapMade — https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/ -->
 </head>
 <body>
   <!-- Mobile nav toggle -->
@@ -142,7 +142,7 @@
   <!-- ======= Header ======= -->
   <header id="header">
     <div class="d-flex flex-column">
-      <div class="profile text-center">
+      <div class="profile">
         <img src="assets/img/user-image.png" alt="Portrait of Aishwarya" class="img-fluid rounded-circle">
         <h1 class="mt-3 mb-1">
           <a href="index.html" class="text-decoration-none">Aishwarya Dhormare</a>
@@ -182,7 +182,7 @@
             <div class="section-title">
               <h2>About</h2>
               <p>I am a data professional with 4.5+ years of experience, currently pursuing an MS in Computer Science at Texas A&amp;M University–Kingsville.</p>
-              <p>Skilled in SQL, Python, cloud platforms (AWS, Azure), and BI tools (Tableau, Power BI). I build data workflows, prepare clean datasets, and develop dashboards that turn raw data into insights.</p>
+              <p>Skilled in SQL, Python, cloud platforms (AWS, Azure), and BI tools (Tableau, Power BI). I build reliable data workflows, prepare clean datasets, and develop dashboards that turn raw data into insights.</p>
               <p>I enjoy solving complex data problems, automating processes, and enabling faster, smarter decision-making.</p>
             </div>
             <div class="text-center">
@@ -429,7 +429,7 @@
                 <ul><li>Python, SQL, Java, C++, Shell</li></ul>
 
                 <h4 class="mt-3">Data Eng &amp; Orchestration</h4>
-                <ul><li>ETL/ELT, Data Modeling, dbt, Airflow, AWS Glue</li></ul>
+                <ul><li>ETL/ELT, Data Modeling, dbt, Apache Airflow, AWS Glue</li></ul>
               </div>
 
               <div class="col-lg-4 col-md-6">
@@ -489,11 +489,11 @@
             <p class="description" style="font-size: 18px;">
               <b>Follow:</b>
               <a href="https://www.linkedin.com/in/aishwaryad6/" class="linkedin" target="_blank" rel="noopener" aria-label="LinkedIn">
-                <i class="fa-brands fa-linkedin" style="color:#0b5ed7; font-size:20px;"></i>
+                <i class="fa-brands fa-linkedin" style="color:#5aa9ff; font-size:20px;"></i>
               </a>
               &nbsp;&nbsp;
               <a href="https://github.com/aishwaryad6" class="git-hub" target="_blank" rel="noopener" aria-label="GitHub">
-                <i class="fa-brands fa-github" style="color:#111827; font-size:20px;"></i>
+                <i class="fa-brands fa-github" style="color:#e7eef6; font-size:20px;"></i>
               </a>
             </p>
 
