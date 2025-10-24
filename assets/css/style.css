@@ -98,7 +98,7 @@ button:hover {
   border: 2px solid rgb(8, 39, 99);
 }
 #header .profile h1 {
-  font-size: 22px;
+  font-size: 20px;
   margin: 0;
   padding: 0;
   font-weight: 600;
@@ -742,7 +742,7 @@ section {
   color: #173b6c;
 }
 .contact .info .email p {
- 
+
   padding: 0 0 10px 60px;
   margin-bottom: 20px;
   font-size: 15px;
@@ -956,7 +956,7 @@ section {
 
  .portfolio-wrap .portfolio-item p {
   text-align: justify;
-  
+
 }
  .portfolio-wrap .portfolio-item a{
   width: auto;
@@ -977,7 +977,7 @@ section {
 @media (max-width: 991px) {
   .portfolio-wrap {
     left: 0px;
-    top: 103px; 
+    top: 103px;
     }
   }
 
