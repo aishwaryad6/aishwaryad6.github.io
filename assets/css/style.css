@@ -1005,3 +1005,9 @@ section {
   font-weight: 500;    /* medium */
   line-height: 1.25;
 }
+
+.section-description {
+  font-size: 15px;
+  font-weight: 400;
+  margin: 0;
+}
