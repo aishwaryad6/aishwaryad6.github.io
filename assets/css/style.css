@@ -999,3 +999,9 @@ section {
   width: 100%;
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
 }
+
+.client-subheader{
+  font-size: 14.5px;   /* bigger than bullets, smaller than role */
+  font-weight: 500;    /* medium */
+  line-height: 1.25;
+}
