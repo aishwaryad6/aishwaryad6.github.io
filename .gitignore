@@ -1,0 +1,20 @@
+# macOS
+.DS_Store
+**/.DS_Store
+
+# IDEs
+.idea/
+
+# Vendor assets (generated / third-party)
+assets/vendor/
+
+# Source maps
+*.map
+
+# Fonts (if vendor-managed)
+assets/vendor/**/fonts/
+
+# Sitemap (if auto-generated)
+sitemap.xml
+
+
